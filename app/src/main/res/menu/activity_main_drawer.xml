@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_digitalize_land"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/digitalize_land" />
+        <item
+            android:id="@+id/nav_join_create_pool_land"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/join_create_head" />
+        <item
+            android:id="@+id/nav_my_lands"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/My_lands" />
+        <item
+            android:id="@+id/nav_my_pools"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/My_pools" />
+
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_request_page"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/manage_requests" />
+
+
+    </group>
+
+
+</menu>

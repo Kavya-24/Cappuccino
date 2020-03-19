@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margins"
+    android:orientation="vertical">
+
+    <!--    Create logic if no lands.-->
+<!--    <TextView-->
+<!--        style="@android:style/TextAppearance"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/margins"-->
+<!--        android:text="@string/My_lands"-->
+<!--        -->
+<!--        android:textSize="@dimen/heading_size"-->
+<!--        android:textStyle="bold" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_my_lands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/my_lands_list" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_land_fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorAccent"
+        app:srcCompat="@drawable/ic_add_black_32dp" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margins"
+    android:background="@color/base_background"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pool_name_nb"
+            android:layout_margin = "@dimen/margins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_of_pool"
+            android:textColor="#000"
+            android:textSize="@dimen/Text_size" />
+        <TextView
+            android:id="@+id/pool_location_nb"
+            android:layout_margin = "@dimen/margins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pool_total_area_nb"
+            android:layout_margin = "@dimen/margins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_area"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pool_profits_nb"
+            android:layout_margin = "@dimen/margins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profits"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

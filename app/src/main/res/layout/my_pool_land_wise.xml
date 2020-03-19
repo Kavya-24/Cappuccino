@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="@dimen/margins">
+
+    <TextView
+        android:id="@+id/pool_with_land_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="@dimen/margins"
+        android:text="@string/pool_name"
+        android:textSize="@dimen/text_size" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="@dimen/margins"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/area_value"
+        android:textSize="@dimen/text_size"/>
+
+</RelativeLayout>

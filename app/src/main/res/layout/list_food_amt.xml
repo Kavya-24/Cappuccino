@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/border"
+    android:layout_margin="@dimen/margins"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:id="@+id/img_food"
+        android:layout_height="80dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:padding="@dimen/margins"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/est_req_land_val"
+        android:textSize="@dimen/Text_size"
+        android:text="@string/est_land_req_val"/>
+
+    <TextView
+        android:id="@+id/est_yield_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/est_yield"
+        android:textSize="@dimen/Text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="@dimen/margins"
+        android:layout_below="@id/img_food">
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/ask_advise"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/ask_for_advise"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/manual_crop"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/crop_manual"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/sell_btn"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/sell_crop"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

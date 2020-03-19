@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/margins">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margins"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pool_name_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pool_name"
+                    android:textSize="@dimen/heading_size" />
+                <TextView
+                    android:id="@+id/pool_id_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pool_id"
+                    android:textSize="@dimen/heading_size" />
+
+
+                <TextView
+                    android:id="@+id/pool_area_total_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_pool_area"
+                    android:textSize="@dimen/heading_size" />
+
+                <TextView
+                    android:id="@+id/my_area_pool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_area_in_the_pool"
+                    android:textSize="@dimen/heading_size" />
+
+
+
+                <TextView
+                    android:id="@+id/location_pool_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location_value"
+                    android:textSize="@dimen/heading_size" />
+
+                <TextView
+                    android:id="@+id/profits_pool_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profits"
+                    android:textSize="@dimen/heading_size" />
+
+                <TextView
+                    android:id="@+id/pool_date_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_created"
+                    android:textSize="@dimen/heading_size" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margins"
+            app:cardCornerRadius="@dimen/margins">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margins"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margins"
+                    android:text="@string/what_crops_are_grown"
+                    android:textSize="@dimen/Text_size" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_food_amt_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/list_food_amt" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margins"
+            app:cardCornerRadius="@dimen/margins">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/margins">
+
+                <TextView
+                    android:id="@+id/pool_inc_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pool_incharge"
+                    android:textSize="@dimen/heading_size" />
+
+                <TextView
+                    android:id="@+id/pool_inc_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inc_number"
+                    android:textSize="@dimen/heading_size" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/leave_pool_btn"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_margin="@dimen/margins"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/leave_pool" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

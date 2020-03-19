@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ashoka.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_digitalize_land"
+            app:destination="@id/nav_digitalize_land" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.ashoka.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_digitalize_land"
+        android:name="com.example.ashoka.ui.digitizeLand.DigitaliseLand"
+        android:label="@string/digitalize_land"
+        tools:layout="@layout/digitalise_land_fragment" />
+
+    <fragment
+        android:id="@+id/nav_join_create_pool_land"
+        android:name="com.example.ashoka.ui.Join_Create_Pool.join_create_pool"
+        android:label="@string/join_create_head"
+        tools:layout="@layout/join_create_pool_fragment" >
+        <action
+            android:id="@+id/action_nav_join_create_pool_land_to_pool_nearby"
+            app:destination="@id/pool_nearby" />
+        <action
+            android:id="@+id/action_nav_join_create_pool_land_to_create_pool"
+            app:destination="@id/create_pool" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_my_lands"
+        android:name="com.example.ashoka.ui.myLands.myLands"
+        android:label="@string/My_lands"
+        tools:layout="@layout/my_lands_fragment" />
+
+    <fragment
+        android:id="@+id/nav_my_pools"
+        android:name="com.example.ashoka.ui.pools.my_pools"
+        android:label="@string/My_pools"
+        tools:layout="@layout/my_pools_fragment" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.ashoka.ui.profile.profile"
+        android:label="@string/profile"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/nav_request_page"
+        android:name="com.example.ashoka.ui.manage_requests.open_page"
+        android:label="@string/manage_requests"
+        tools:layout="@layout/fragment_open_page" >
+        <action
+            android:id="@+id/action_nav_request_page_to_rejected_requests_land"
+            app:destination="@id/rejected_requests_land" />
+        <action
+            android:id="@+id/action_nav_request_page_to_pending_requests_land"
+            app:destination="@id/pending_requests_land" />
+        <action
+            android:id="@+id/action_nav_request_page_to_rejected_requests_pool"
+            app:destination="@id/rejected_requests_pool" />
+        <action
+            android:id="@+id/action_nav_request_page_to_pending_requests_pool"
+            app:destination="@id/pending_requests_pool" />
+    </fragment>
+    <fragment
+        android:id="@+id/pending_requests_land"
+        android:name="com.example.ashoka.ui.manage_requests.pending_requests_land"
+        tools:layout="@layout/pending_requests_land_fragment"
+        android:label="pending_requests_land" />
+    <fragment
+        android:id="@+id/rejected_requests_land"
+        tools:layout="@layout/rejected_requests_land_fragment"
+        android:name="com.example.ashoka.ui.manage_requests.rejected_requests_land"
+        android:label="rejected_requests_land" />
+    <fragment
+        android:id="@+id/pending_requests_pool"
+        tools:layout="@layout/pending_requests_pool_fragment"
+        android:name="com.example.ashoka.ui.manage_requests.pending_requests_pool"
+        android:label="pending_requests_pool" />
+    <fragment
+        android:id="@+id/rejected_requests_pool"
+        tools:layout="@layout/rejected_requests_pool_fragment"
+        android:name="com.example.ashoka.ui.manage_requests.rejected_requests_pool"
+        android:label="rejected_requests_pool" />
+    <fragment
+        android:id="@+id/pool_nearby"
+        android:name="com.example.ashoka.ui.pools.pool_nearby"
+        tools:layout="@layout/pool_nearby_fragment"
+        android:label="pool_nearby" />
+    <fragment
+        android:id="@+id/create_pool"
+        tools:layout="@layout/create_pool_fragment"
+        android:name="com.example.ashoka.ui.Join_Create_Pool.create_pool"
+        android:label="create_pool" />
+
+
+</navigation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margins"
+    android:background="@color/base_background"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pl_land_name"
+            android:layout_margin = "@dimen/margins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_land"
+            android:textColor="#000"
+            android:textSize="@dimen/Text_size" />
+        <TextView
+            android:id="@+id/pl_location"
+            android:layout_margin = "@dimen/margins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/pl_date"
+            android:layout_margin = "@dimen/margins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date_of_request"
+            android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins">
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/view_pl"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/view_request"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/pl_cancel"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/cancel_request"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

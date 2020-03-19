@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Ashoka</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="My_lands">My Lands</string>
+    <string name="digitalize_land">Digitalize Land</string>
+    <string name="digitalize_land_heading">Fill all the details below</string>
+    <string name="join_create_head">Join/Create Pool</string>
+    <string name="join_btn">Join Pool</string>
+    <string name="create_btn">Create Pool</string>
+    <string name="My_pools">My Pools</string>
+    <string name="name_land">Name of Lands</string>
+    <string name="profits">Profits</string>
+    <string name="test_string">Hello world This is a test String</string>
+    <string name="name_of_pool">Name of Pool</string>
+    <string name="profile">Profile</string>
+    <string name="long_string_test">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="email_value">email_value</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_value">phone_value</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="aadhar_value">aadhar_value</string>
+    <string name="total_land">Total Land</string>
+    <string name="total_land_value">total_land_value</string>
+    <string name="pool_name">Pool Name</string>
+    <string name="area_value">area_value</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="manage_requests">Manage Requests</string>
+    <string name="pending_requests">Pending Requests</string>
+    <string name="pending_pool_requests">Pending Pool Requests</string>
+    <string name="pending_land_requests">Pending Land Requests</string>
+    <string name="rejected_land_requests">Rejected Land Requests</string>
+    <string name="rejected_pool_requests">Rejected Pool Requests</string>
+    <string name="name_value">name_value</string>
+    <string name="location_value">location_value</string>
+    <string name="what_crops_i_grow">What Crops I grow</string>
+    <string name="est_land_req_val">est_land_req_val</string>
+    <string name="est_yield">est_yield</string>
+    <string name="ask_for_advise">Ask for Advise</string>
+    <string name="crop_manual">Crop Manual</string>
+    <string name="sell_crop">Sell Crop</string>
+    <string name="buy_inputs">Buy Inputs</string>
+    <string name="location">Location</string>
+    <string name="date_of_request">Date of Request</string>
+    <string name="view_request">View Request</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="resend_request">Resend Request</string>
+    <string name="total_area">Total Area</string>
+    <string name="total_pool_area">Total Pool Area</string>
+    <string name="date_created">Date Created</string>
+    <string name="pool_incharge">Pool Incharge</string>
+    <string name="what_crops_are_grown">What Crops are grown</string>
+    <string name="join_pool">Join Pool</string>
+    <string name="inc_number">Inc Number</string>
+    <string name="pool_id">Pool ID</string>
+    <string name="land_id">Land ID</string>
+    <string name="name_of_the_pool">Name of the Pool</string>
+    <string name="select_lands_to_add">Select Lands to add</string>
+    <string name="write_something">Write something</string>
+    <string name="create_pool">Create Pool</string>
+    <string name="my_area_in_the_pool">My Area in the pool</string>
+    <string name="leave_pool">Leave Pool</string>
+    <string name="click_to_get_location">Click to get location</string>
+    <string name="submit_for_verification">Submit for verification</string>
+    <string name="land_area">Land Area</string>
+    <string name="temp">Temp</string>
+    <string name="precipitation">Precipitation</string>
+    <string name="ppt_value">ppt value</string>
+    <string name="humidity">Humidity</string>
+    <string name="humidity_value">humidity_value</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="ws">WS</string>
+    <string name="add_land">ADD LAND</string>
+    <string name="what_is_there_in_the_market">What is there in the market</string>
+    <string name="mandi_me_kya_hai">Mandi me Kya Hai</string>
+    <string name="what_to_grow">What to grow</string>
+
+
+    <!--    Array for size measurements-->
+    <string-array name="land_charts_measures">
+        <item>Hectares</item>
+        <item>Bigha</item>
+        <item>Acres</item>
+        <item>Yards</item>
+    </string-array>
+</resources>

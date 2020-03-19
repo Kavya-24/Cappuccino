@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_box_height"
+            android:layout_margin="@dimen/margins"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_join_pool"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/margins"
+                android:text="@string/join_btn" />
+
+            <Button
+                android:id="@+id/button_create_pool"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/margins"
+                android:text="@string/create_btn" />
+
+
+        </LinearLayout>
+
+<!--    Create a logic to view pools if any.-->
+        <TextView
+            android:id="@+id/my_pools_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margins"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:text="@string/My_pools"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_my_pools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/my_pool_list" />
+    </LinearLayout>
+
+
+</LinearLayout>
