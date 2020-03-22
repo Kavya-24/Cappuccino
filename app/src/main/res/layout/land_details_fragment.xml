@@ -50,13 +50,13 @@
                     android:layout_height="wrap_content"
                     android:text="@string/location_value"
                     android:textSize="@dimen/heading_size" />
+
                 <TextView
                     android:id="@+id/farmer_profits"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/profits"
                     android:textSize="@dimen/heading_size" />
-
 
 
             </LinearLayout>
@@ -80,17 +80,36 @@
                     android:layout_height="wrap_content">
 
                     <TextView
+                        android:id="@+id/tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/margins"
                         android:text="@string/what_crops_i_grow"
                         android:textSize="@dimen/Text_size" />
 
-                    <Spinner
-                        android:id="@+id/spin_list_food"
-                        android:layout_width="wrap_content"
+                    <!--                    <Spinner-->
+                    <!--                        android:id="@+id/spin_list_food"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_alignParentEnd="true" />-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true" />
+                        android:layout_below="@id/tv"
+                        android:id="@+id/cv_add_crop"
+                        android:background="@color/base_background">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/add_crop" />
+
+
+                    </androidx.cardview.widget.CardView>
                 </RelativeLayout>
 
                 <androidx.recyclerview.widget.RecyclerView

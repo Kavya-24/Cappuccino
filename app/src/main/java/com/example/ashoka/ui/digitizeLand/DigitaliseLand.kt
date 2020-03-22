@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -13,10 +14,10 @@ import com.example.ashoka.R
 class DigitaliseLand : Fragment() {
 
     private lateinit var digitaliseLand: DigitaliseLandViewModel
-    lateinit var option: Spinner
-    lateinit var Tv1: TextView
-    lateinit var Tv2: TextView
-    lateinit var unit_land : String
+
+    lateinit var tvArea: TextView
+    lateinit var tvLocation: TextView
+    lateinit var unit_land: String
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,38 +48,41 @@ class DigitaliseLand : Fragment() {
             digitizeLandButton()
         }
 
+//        val spinner_value = resources.getStringArray(R.array.land_charts_measures)
+//        val spinner = root.findViewById<Spinner>(R.id.spinner_area)
 
-        // Find the methods
-//        option = root.findViewById(R.id.spinner_area) as Spinner
-//        Tv1 = root.findViewById(R.id.digitizeArea) as TextView
-//        Tv2 = root.findViewById(R.id.digitizeLocation) as TextView
+//        if (spinner != null) {
+//            val adapter = context?.let {
+//                ArrayAdapter(
+//                    it,
+//                    android.R.layout.simple_spinner_item, spinner_value
+//                )
+//            }
+//            spinner.adapter = adapter
 //
+//            spinner.onItemSelectedListener = object :
+//                AdapterView.OnItemSelectedListener {
+//                override fun onItemSelected(
+//                    parent: AdapterView<*>,
+//                    view: View, position: Int, id: Long
+//                ) {
 //
-//        //Set adapter on the option selected
-//        val land_chart = arrayOf("Bigha", "Hectare", "Acres", "Yards", "Miles")
-//        option.adapter = ArrayAdapter<String>(context,R.array.land_charts_measures,)
-//        option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-//            override fun onNothingSelected(parent: AdapterView<*>?) {
-//                unit_land =
+//                }
 //
-//             }
-//
-//            override fun onItemSelected(
-//                parent: AdapterView<*>?,
-//                view: View?,
-//                position: Int,
-//                id: Long
-//            ) {
-//                //This is implemented when the item is changed in the spinner.
-//
-//
-//
+//                override fun onNothingSelected(parent: AdapterView<*>) {
+//                    spinner.get(pos)
+//                }
 //            }
 //
 //        }
 
         return root
     }
+
+
+
+
+
 
 
     private fun getLocation() {

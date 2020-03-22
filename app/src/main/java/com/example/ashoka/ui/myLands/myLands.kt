@@ -4,15 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ashoka.R
 import com.example.ashoka.adapters.land_list_adapter
-import com.example.ashoka.data.Land_farmer
 import com.example.ashoka.models.farmer_land
 
 class myLands : Fragment() {
@@ -73,13 +70,13 @@ class myLands : Fragment() {
 
     private fun generateData(): ArrayList<farmer_land> {
         val res = ArrayList<farmer_land>()
-        res.add(farmer_land("Kavya","a lot","Happy ME"))
+        res.add(farmer_land("Kavya", "a lot", "Happy ME"))
 
-        res.add(farmer_land("Kavya","a lot","ok mE"))
+        res.add(farmer_land("Kavya", "a lot", "ok mE"))
 
-        res.add(farmer_land("VS","a lot","Happy ME"))
+        res.add(farmer_land("VS", "a lot", "Happy ME"))
 
-        return  res
+        return res
     }
 
 

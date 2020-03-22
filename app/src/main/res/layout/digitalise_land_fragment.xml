@@ -39,6 +39,7 @@
                 android:id="@+id/textInputLayoutLandArea"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/text_box_height"
+                android:layout_margin="@dimen/margins"
                 android:layout_weight="1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
@@ -53,10 +54,10 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Spinner
-                android:layout_width="wrap_content"
-                android:id="@+id/spinner_area"
-                android:layout_height="wrap_content" />
+<!--            <Spinner-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:id="@+id/spinner_area"-->
+<!--                android:layout_height="wrap_content" />-->
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout

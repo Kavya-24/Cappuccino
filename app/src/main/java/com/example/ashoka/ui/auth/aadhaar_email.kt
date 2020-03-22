@@ -1,4 +1,4 @@
-package com.example.ashoka.ui.home_params
+package com.example.ashoka.ui.auth
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,23 +9,24 @@ import android.view.ViewGroup
 
 import com.example.ashoka.R
 
-class maket_arbitrage : Fragment() {
+class aadhaar_email : Fragment() {
 
+    companion object {
+        fun newInstance() = aadhaar_email()
+    }
 
-
-
-    private lateinit var viewModel: MaketArbitrageViewModel
+    private lateinit var viewModel: AadhaarEmailViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.maket_arbitrage_fragment, container, false)
+        return inflater.inflate(R.layout.aadhaar_email_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(MaketArbitrageViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(AadhaarEmailViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

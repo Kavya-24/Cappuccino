@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_digitalize_land"
             app:destination="@id/nav_digitalize_land" />
+        <action
+            android:id="@+id/action_nav_home_to_what_to_grow2"
+            app:destination="@id/what_to_grow2" />
     </fragment>
 
     <fragment
@@ -104,6 +107,38 @@
         tools:layout="@layout/create_pool_fragment"
         android:name="com.example.ashoka.ui.Join_Create_Pool.create_pool"
         android:label="create_pool" />
+    <fragment
+        android:id="@+id/what_to_grow2"
+        android:name="com.example.ashoka.ui.home_params.what_to_grow"
+        android:label="what_to_grow_fragment"
+        tools:layout="@layout/what_to_grow_fragment" />
+    <fragment
+        android:id="@+id/aadhaar_email"
+        android:name="com.example.ashoka.ui.auth.aadhaar_email"
+        android:label="aadhaar_email" >
+        <action
+            android:id="@+id/action_aadhaar_email_to_pwd_signup"
+            app:destination="@id/pwd_signup" />
+    </fragment>
+    <fragment
+        android:id="@+id/name_number"
+        android:name="com.example.ashoka.ui.auth.name_number"
+        android:label="name_number" >
+        <action
+            android:id="@+id/action_name_number_to_aadhaar_email"
+            app:destination="@id/aadhaar_email" />
+        <action
+            android:id="@+id/action_name_number_to_pwd_login"
+            app:destination="@id/pwd_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/pwd_signup"
+        android:name="com.example.ashoka.ui.auth.pwd_signup"
+        android:label="pwd_signup" />
+    <fragment
+        android:id="@+id/pwd_login"
+        android:name="com.example.ashoka.ui.auth.pwd_login"
+        android:label="pwd_login" />
 
 
 </navigation>
