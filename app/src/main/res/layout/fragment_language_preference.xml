@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:columnCount="1"
+    android:rowCount="2">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/lang_eng"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/margins"
+        app:cardBackgroundColor="@color/base_background"
+        app:cardCornerRadius="@dimen/margins">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/your_language_is_set_to_english"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/heading_size"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/lang_hindi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/margins"
+        app:cardBackgroundColor="@color/base_background"
+        app:cardCornerRadius="@dimen/margins">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/hindi_welc"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/heading_size"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</GridLayout>

@@ -22,7 +22,12 @@ class land_details : Fragment() {
 
         landDetailsViewModel = ViewModelProviders.of(this).get(LandDetailsViewModel::class.java)
         val root = inflater.inflate(R.layout.land_details_fragment, container, false)
-        // return inflater.inflate(R.layout.land_details_fragment, container, false)
+
+        val crops =
+
+
+
+
         return root
     }
 

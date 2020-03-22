@@ -1,0 +1,35 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margins"
+    android:background="@color/white"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wtg_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margins"
+            android:text="@string/what_to_grow"
+            android:textColor="#000"
+            android:textSize="@dimen/Text_size" />
+
+        <TextView
+            android:id="@+id/desc_what_to_grow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margins"
+            android:text="@string/desc"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,4 +1,4 @@
-package com.example.ashoka.ui.home_params
+package com.example.ashoka.ui.auth
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,23 +9,24 @@ import android.view.ViewGroup
 
 import com.example.ashoka.R
 
-class maket_arbitrage : Fragment() {
+class name_number : Fragment() {
 
+    companion object {
+        fun newInstance() = name_number()
+    }
 
-
-
-    private lateinit var viewModel: MaketArbitrageViewModel
+    private lateinit var viewModel: NameNumberViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.maket_arbitrage_fragment, container, false)
+        return inflater.inflate(R.layout.name_number_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(MaketArbitrageViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(NameNumberViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

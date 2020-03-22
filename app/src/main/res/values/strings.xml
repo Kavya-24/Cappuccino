@@ -89,6 +89,21 @@
     <string name="what_is_there_in_the_market">What is there in the market</string>
     <string name="mandi_me_kya_hai">Mandi me Kya Hai</string>
     <string name="what_to_grow">What to grow</string>
+    <string name="your_language_is_set_to_english">Your Language is set to English</string>
+    <string name="hindi_welc">आपकी भाषा हिंदी पर सेट है</string>
+    <string name="next">Next</string>
+    <string name="password">Password</string>
+    <string name="set_password">Set Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="by_checking_this_i_confirm_that_the_information_provided_is_correct">By checking this, I confirm that the information provided is correct. </string>
+    <string name="aadhaar_number">Aadhaar Number</string>
+
+    <string name="desc">Desc</string>
+    <string name="log_out">Logout</string>
+    <string name="add_crop">Add Crop</string>
+    <string name="estimated_land_required">Estimated Land Used</string>
+    <string name="_0_00">0.00</string>
+    <string name="crop_name">Crop Name</string>
 
 
     <!--    Array for size measurements-->
