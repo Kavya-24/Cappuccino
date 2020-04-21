@@ -27,7 +27,7 @@
     <fragment
         android:id="@+id/nav_digitalize_land"
         android:name="com.example.ashoka.ui.digitizeLand.DigitaliseLand"
-        android:label="@string/digitalize_land"
+        android:label="@string/add_land"
         tools:layout="@layout/digitalise_land_fragment" />
 
     <fragment
@@ -110,7 +110,7 @@
     <fragment
         android:id="@+id/what_to_grow2"
         android:name="com.example.ashoka.ui.home_params.what_to_grow"
-        android:label="what_to_grow_fragment"
+        android:label="@string/to_grow"
         tools:layout="@layout/what_to_grow_fragment" />
     <fragment
         android:id="@+id/aadhaar_email"
@@ -134,7 +134,11 @@
     <fragment
         android:id="@+id/pwd_signup"
         android:name="com.example.ashoka.ui.auth.pwd_signup"
-        android:label="pwd_signup" />
+        android:label="pwd_signup" >
+        <action
+            android:id="@+id/action_pwd_signup_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/pwd_login"
         android:name="com.example.ashoka.ui.auth.pwd_login"

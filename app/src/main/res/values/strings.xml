@@ -75,7 +75,7 @@
     <string name="create_pool">Create Pool</string>
     <string name="my_area_in_the_pool">My Area in the pool</string>
     <string name="leave_pool">Leave Pool</string>
-    <string name="click_to_get_location">Click to get location</string>
+    <string name="click_to_get_location">Click to get current location</string>
     <string name="submit_for_verification">Submit for verification</string>
     <string name="land_area">Land Area</string>
     <string name="temp">Temp</string>
@@ -95,7 +95,7 @@
     <string name="password">Password</string>
     <string name="set_password">Set Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="by_checking_this_i_confirm_that_the_information_provided_is_correct">By checking this, I confirm that the information provided is correct. </string>
+    <string name="by_checking_this_i_confirm_that_the_information_provided_is_correct">By checking this, I confirm that the information provided is correct </string>
     <string name="aadhaar_number">Aadhaar Number</string>
 
     <string name="desc">Desc</string>
@@ -104,7 +104,9 @@
     <string name="estimated_land_required">Estimated Land Used</string>
     <string name="_0_00">0.00</string>
     <string name="crop_name">Crop Name</string>
-
+    <string name="to_grow">What to grow</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
 
     <!--    Array for size measurements-->
     <string-array name="land_charts_measures">

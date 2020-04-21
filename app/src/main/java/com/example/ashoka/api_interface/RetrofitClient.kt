@@ -2,23 +2,36 @@ package com.example.ashoka.api_interface
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.converter.moshi.MoshiConverterFactory
 
 object RetrofitClient {
-    //Object is used in Kotlin to access the Instantiated Retrofit
-    private const val BASE_URL = "https://api.myjson.com/bins"
 
-    //Define a client which is OKHTTP
-    //This is needed for Authorisation
-//    private  val okHttpClient = OkHttpClient.Builder()
-//        .addInterceptor{
-//            val ori
-//        }
-    val instance_land: land by lazy {
-        val retrofit1 = Retrofit.Builder()
-            .baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build()
+    const val BASE_URL = "https://www.json-generator.com/api/json/get/"
 
-        retrofit1.create(land::class.java)
+    fun makeRetrofitHomeCall(): home_page {
+        return Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(MoshiConverterFactory.create())
+            .build().create(home_page::class.java)
     }
+
+
+    fun makeRetrofitAuthCall() : auth{
+        return Retrofit.Builder()
+            .baseUrl("https://jsonplaceholder.typicode.com/")
+            .addConverterFactory(MoshiConverterFactory.create())
+            .build().create(auth::class.java)
+
+
+
+    }
+
+//    val retrofit: Retrofit = Retrofit.Builder().baseUrl("https://jsonplaceholder.typicode.com")
+//        .addConverterFactory(GsonConverterFactory.create())
+//        .build()
+
+   // val response_wtg  = retrofit.create((home_page::class.java)).getWtg()
+//
 
 
 }
