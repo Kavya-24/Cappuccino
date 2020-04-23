@@ -18,11 +18,11 @@
 
             <ImageView
                 android:id="@+id/img"
-                android:layout_width="match_parent"
-                android:layout_height="128dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/margins"
-                android:src="@drawable/ic_menu_camera" />
+                android:src="@drawable/ic_account_circle_black_24dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til5"
@@ -60,6 +60,7 @@
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="@dimen/margins"
                     android:hint="@string/email"
+                    android:inputType="textEmailAddress"
                     android:textColorHint="@color/colorPrimary" />
             </com.google.android.material.textfield.TextInputLayout>
 

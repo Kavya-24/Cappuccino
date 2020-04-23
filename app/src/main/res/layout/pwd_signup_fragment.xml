@@ -29,6 +29,7 @@
                     android:id="@+id/user_signup_pwd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="textPassword"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginStart="@dimen/margins"
                     android:layout_marginTop="32dp"
@@ -52,6 +53,8 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginStart="@dimen/margins"
                     android:layout_marginTop="32dp"
+                    android:inputType="textPassword"
+
                     android:layout_marginEnd="@dimen/margins"
                     android:hint="@string/confirm_password"
                     android:textColorHint="@color/colorPrimary" />
@@ -71,7 +74,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margins"
+                    android:maxLines="8"
+                    android:layout_marginStart="@dimen/margins"
                     android:text="@string/by_checking_this_i_confirm_that_the_information_provided_is_correct" />
 
             </LinearLayout>
@@ -83,7 +87,7 @@
     </ScrollView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cv_next_login_pwd"
+        android:id="@+id/cv_next_sign_pwd"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"

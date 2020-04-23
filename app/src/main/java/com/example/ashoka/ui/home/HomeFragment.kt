@@ -1,6 +1,8 @@
 package com.example.ashoka.ui.home
 
 import android.content.Intent
+import android.location.Location
+import android.location.LocationManager
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,6 +17,14 @@ import com.example.ashoka.R
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
+
+    //Get location for the weather condition
+    lateinit var locationManager: LocationManager
+    private var hasGps: Boolean = false
+    private var hasNetwork: Boolean = false
+    private var locationGPS: Location? = null
+    private var locationNetwork: Location? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -51,4 +61,6 @@ class HomeFragment : Fragment() {
 
         return root
     }
+
+
 }
