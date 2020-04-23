@@ -28,7 +28,11 @@
         android:id="@+id/nav_digitalize_land"
         android:name="com.example.ashoka.ui.digitizeLand.DigitaliseLand"
         android:label="@string/add_land"
-        tools:layout="@layout/digitalise_land_fragment" />
+        tools:layout="@layout/digitalise_land_fragment">
+        <action
+            android:id="@+id/action_nav_digitalize_land_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_join_create_pool_land"

@@ -21,7 +21,7 @@ interface auth {
     @POST("posts")
     fun postAadhar(@Body newAadhar : aadhar) : Call<aadhar>
 
-    //Post password
+    //Post password (For signUp password)
     @POST("posts")
     fun postPassword(@Body password : pwd) : Call<pwd>
 

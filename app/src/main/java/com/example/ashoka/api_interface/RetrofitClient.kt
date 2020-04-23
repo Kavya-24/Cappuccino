@@ -1,7 +1,6 @@
 package com.example.ashoka.api_interface
 
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 object RetrofitClient {
@@ -22,16 +21,15 @@ object RetrofitClient {
             .addConverterFactory(MoshiConverterFactory.create())
             .build().create(auth::class.java)
 
-
-
     }
 
-//    val retrofit: Retrofit = Retrofit.Builder().baseUrl("https://jsonplaceholder.typicode.com")
-//        .addConverterFactory(GsonConverterFactory.create())
-//        .build()
+    fun makeRetrofitLandCall(): land {
+        return Retrofit.Builder()
+            .baseUrl("https://demo8230898.mockable.io/")
+            .addConverterFactory(MoshiConverterFactory.create())
+            .build().create(land::class.java)
 
-   // val response_wtg  = retrofit.create((home_page::class.java)).getWtg()
-//
+    }
 
 
 }

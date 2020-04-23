@@ -1,23 +1,16 @@
 package com.example.ashoka.api_interface
 
-import retrofit2.http.GET
+import com.example.ashoka.objects.add_land
+import retrofit2.http.Body
 import retrofit2.http.POST
-import retrofit2.http.Query
 
 interface land {
   //Interface for all the API calls for the land
+  //Add land from digitize land:
+  //To send : Latitude, longitude, location(numberDecimal) -> ALl float, crops string
+  @POST("test1")
+  fun addLandRequest(@Body addLand: add_land): retrofit2.Call<add_land>
 
-
-    //Post the digitize land data on the server (Add land)
-//    @POST
-
-    //Get the list of his lands
-//    @GET("/1c1ee2")
-//    fun getLandList(@Query("profits") profits: String,
-//                    @Query("profits") profits: String,
-//                    @Query("profits") profits: String,
-//                    @Query("profits") profits: String
-//                    )
 
 //    //Get the details of his land
 //    @GET

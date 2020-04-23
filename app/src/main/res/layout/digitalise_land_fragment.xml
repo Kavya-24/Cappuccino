@@ -12,16 +12,6 @@
         android:orientation="vertical">
 
 
-        <!--    <androidx.appcompat.widget.Toolbar-->
-        <!--        android:id="@+id/digitalizeToolbar"-->
-        <!--        android:layout_width="match_parent"-->
-        <!--        android:layout_height="wrap_content"-->
-        <!--        app:titleTextColor="@color/colorPrimary">-->
-
-
-        <!--    </androidx.appcompat.widget.Toolbar>-->
-
-
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
@@ -49,15 +39,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:hint="@string/land_area"
+                    android:hint="@string/land_area_in_hectares"
+                    android:inputType="numberDecimal"
                     app:textInputLayoutFocusedRectEnabled="true" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-<!--            <Spinner-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:id="@+id/spinner_area"-->
-<!--                android:layout_height="wrap_content" />-->
+            <!--            <Spinner-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:id="@+id/spinner_area"-->
+            <!--                android:layout_height="wrap_content" />-->
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -85,22 +76,82 @@
             android:text="@string/click_to_get_location"
             android:textSize="16sp"
             android:visibility="visible" />
+
         <TextView
+            android:id="@+id/latTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margins"
             android:text="@string/latitude"
             android:textSize="16sp"
-            android:visibility="gone"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lonTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="@dimen/margins"
-            android:id="@+id/latTextView"/>
+            android:text="@string/longitude"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/longitude"
-            android:textSize="16sp"
-            android:visibility="gone"
             android:layout_margin="@dimen/margins"
-            android:id="@+id/lonTextView"/>
+            android:maxLines="2"
+            android:text="@string/choose_a_crop_to_start_with_you_may_change_this_later"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/cv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/potato"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Text_size" />
+
+            <RadioButton
+                android:id="@+id/cv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/maize"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Text_size" />
+
+
+            <RadioButton
+                android:id="@+id/cv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tomato"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Text_size" />
+
+
+            <RadioButton
+                android:id="@+id/cv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sugarcane"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Text_size" />
+
+
+            <RadioButton
+                android:id="@+id/cv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/onion"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Text_size" />
+
+
+        </RadioGroup>
 
 
         <Button
